@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./MainPage.module.scss";
 import { Link } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 
 const MainPage = () => {
   return (
@@ -23,10 +24,20 @@ const MainPage = () => {
         <Link className={styles.link}>Watches</Link>
         <Link className={styles.link}>Others</Link> */}
 
-        <div className={styles.card}>Каталог</div>
-        <div className={styles.card}>Собрать ПК</div>
-        <div className={styles.card}>Готовые сборки</div>
+        <div className={styles.card}>
+          <p>Каталог</p>
+        </div>
+        <div className={styles.card}>
+          <p>Собрать ПК</p>
+        </div>
+        <div className={styles.card}>
+          <p>Готовые сборки</p>
+        </div>
+        <div className={styles.card}>
+          <p>Акции</p>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };
