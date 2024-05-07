@@ -1,0 +1,25 @@
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 40px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.card {
+  width: 250px;
+  height: 200px;
+  background-color: orange;
+  border-radius: 20px;
+  cursor: pointer;
+}
