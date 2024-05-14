@@ -2,21 +2,23 @@ import React from "react";
 import styles from "./MainPage.module.scss";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
 
 const MainPage = () => {
   return (
     <div className={styles.main}>
-      <div className={styles.header}>
-        {/* <div className={styles.header_content}> */}
+      <Header />
+      {/* <div className={styles.header}>
+        <div className={styles.header_content}>
         <h3>Amin Store</h3>
-        {/* </div> */}
+        </div>
         <div>
           <Link to="/signup" className={styles.link}>
             Signup
           </Link>
           <input type="text" />
         </div>
-      </div>
+      </div> */}
       <div className={styles.categories}>
         {/* <Link className={styles.link}>Laptops</Link>
         <Link className={styles.link}>Phones</Link>
@@ -24,9 +26,9 @@ const MainPage = () => {
         <Link className={styles.link}>Watches</Link>
         <Link className={styles.link}>Others</Link> */}
 
-        <div className={styles.card}>
+        <Link to="/catalog" className={styles.card}>
           <p>Каталог</p>
-        </div>
+        </Link>
         <div className={styles.card}>
           <p>Собрать ПК</p>
         </div>
